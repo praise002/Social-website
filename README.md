@@ -3,6 +3,7 @@
 the necessary views for users to register, log in, log out, edit their password, and reset their password. 
 I built a model for custom user profiles, and I created a custom authentication backend to let 
 users log into my site using their email address.</p>
+
 ## Basic commands
 - pipenv install Django~=4.1.0
 - python manage.py createsuperuser
