@@ -18,3 +18,7 @@ users log into my site using their email address.</p>
 - pipenv install werkzeug==2.2.2
 - pipenv install pyOpenSSL==22.0.0
 - python manage.py runserver_plus --cert-file cert.crt
+- pipenv install gunicorn
+- pip freeze > requirements.txt
+- python --version
+- python manage.py collectstatic
