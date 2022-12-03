@@ -6,6 +6,10 @@ name = "pypi"
 [packages]
 django = "~=4.1.0"
 pillow = "==9.2.0"
+social-auth-app-django = "*"
+django-extensions = "*"
+werkzeug = "==2.2.2"
+pyopenssl = "==22.0.0"
 
 [dev-packages]
 

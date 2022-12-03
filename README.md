@@ -8,3 +8,8 @@ users log into my site using their email address.</p>
 - pipenv install Django~=4.1.0
 - python manage.py createsuperuser
 - pipenv install Pillow==9.2.0
+- pipenv install social-auth-app-django
+- pipenv install django-extensions
+- pipenv install werkzeug==2.2.2
+- pipenv install pyOpenSSL==22.0.0
+- python manage.py runserver_plus --cert-file cert.crt
