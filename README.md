@@ -22,3 +22,4 @@ users log into my site using their email address.</p>
 - pip freeze > requirements.txt
 - python --version
 - python manage.py collectstatic
+- pipenv install python-dotenv
