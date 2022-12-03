@@ -1,3 +1,7 @@
+[bookmarks-login](https://web-production-9da7.up.railway.app/account/login)
+[register](https://web-production-9da7.up.railway.app/register)
+[edit](https://web-production-9da7.up.railway.app/edit)
+[dashboard](https://web-production-9da7.up.railway.app/account)
 # Functionality: What the app can do?
  <p> I learned how to build an authentication system for my site. I implemented all 
 the necessary views for users to register, log in, log out, edit their password, and reset their password. 
