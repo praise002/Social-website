@@ -3,6 +3,11 @@
 the necessary views for users to register, log in, log out, edit their password, and reset their password. 
 I built a model for custom user profiles, and I created a custom authentication backend to let 
 users log into my site using their email address.</p>
+<p>
+    I added social authentication to my site so that users can use their existing Facebook, Twitter, Github, LinkedIn or Google accounts to log in. I used Python Social Auth and implemented social authentication using OAuth 2.0, the industry-standard protocol for authorization. I also learned how 
+    to serve my development server through HTTPS using Django Extensions. Finally, I customized 
+    the authentication pipeline to create user profiles for new users automatically.
+</p>
 
 ## Basic commands
 - pipenv install Django~=4.1.0
