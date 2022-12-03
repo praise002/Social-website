@@ -22,6 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+load_dotenv()
 SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -161,20 +162,22 @@ SOCIAL_AUTH_PIPELINE = [
     'social_core.pipeline.user.user_details',
 ]
 
-SOCIAL_AUTH_FACEBOOK_KEY = config.APP_ID  # Facebook App ID
-SOCIAL_AUTH_FACEBOOK_SECRET = config.APP_SECRET  # Facebook App Secret
+
+load_dotenv()
+SOCIAL_AUTH_FACEBOOK_KEY = os.getenv('APP_ID')  # Facebook App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = os.getenv('APP_SECRET') # Facebook App Secret
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 
-SOCIAL_AUTH_TWITTER_KEY = config.API_KEY # Twitter API Key
-SOCIAL_AUTH_TWITTER_SECRET = config.API_SECRET_KEY # Twitter API Secret
+SOCIAL_AUTH_TWITTER_KEY = os.getenv('API_KEY') # Twitter API Key
+SOCIAL_AUTH_TWITTER_SECRET = os.getenv('API_SECRET_KEY') # Twitter API Secret
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = config.GOOGLE_CLIENT_ID  # Google Client ID
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = config.GOOGLE_CLIENT_SECRET  # Google Client Secret
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = os.getenv('GOOGLE_CLIENT_ID') # Google Client ID
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = os.getenv('GOOGLE_CLIENT_SECRET')  # Google Client Secret
 
-SOCIAL_AUTH_GITHUB_KEY = config.GITHUB_CLIENT_ID
-SOCIAL_AUTH_GITHUB_SECRET = config.GITHUB_CLIENT_SECRET
+SOCIAL_AUTH_GITHUB_KEY = os.getenv('GITHUB_CLIENT_ID')
+SOCIAL_AUTH_GITHUB_SECRET = os.getenv('GITHUB_CLIENT_SECRET')
 
-SOCIAL_AUTH_LINKEDIN_OAUTH2_KEY = config.LINKEDIN_CLIENT_ID
-SOCIAL_AUTH_LINKEDIN_OAUTH2_SECRET = config.LINKEDIN_CLIENT_SECRET
+SOCIAL_AUTH_LINKEDIN_OAUTH2_KEY = os.getenv('LINKEDIN_CLIENT_ID')
+SOCIAL_AUTH_LINKEDIN_OAUTH2_SECRET = os.getenv('LINKEDIN_CLIENT_SECRET')
 
 
