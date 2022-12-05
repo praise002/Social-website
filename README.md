@@ -27,3 +27,4 @@ users log into my site using their email address.</p>
 - python --version
 - python manage.py collectstatic
 - pipenv install python-dotenv
+- pipenv install whitenoise

@@ -12,6 +12,7 @@ werkzeug = "==2.2.2"
 pyopenssl = "==22.0.0"
 gunicorn = "*"
 python-dotenv = "*"
+whitenoise = "*"
 
 [dev-packages]
 
